@@ -392,7 +392,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+  
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -409,7 +409,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: rgba(255, 136, 1, 0.637);
+    color: var(--color-secondary);
   }
 
   .navbar .dropdown ul {
@@ -1945,17 +1945,17 @@ section {
   display: inline-block;
   padding: 14px 60px;
   border-radius: 50px;
+  background-color: var(--color-secondary);
   transition: 0.3s;
-  color: rgb(255, 255, 255);
-  background: rgba(252, 152, 21, 0.8);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(252, 152, 21, 0.7);
+  color: rgb(3, 3, 3);
+  
+  border: 2px solid var(--color-secondary);
 }
 
 .hero .btn-get-started:hover {
-  border-color: rgba(252, 249, 246, 0.6);
-  background-color: rgba(252, 249, 246, 0.6) ;
-  color: rgb(236, 142, 0);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 15px rgb(206, 205, 204);
+  color: #fff;
 }
 
 .hero .btn-watch-video {
@@ -2294,7 +2294,7 @@ section {
 .blog .blog-details .meta-bottom .share i {
   padding-left: 5px;
 }
-
+/*
 .blog .post-author {
   padding: 20px;
   margin-top: 30px;
@@ -2330,9 +2330,9 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Blog Sidebar
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .blog .sidebar {
   padding: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -2487,9 +2487,9 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Blog Comments
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .blog .comments {
   margin-top: 30px;
 }
@@ -2599,7 +2599,7 @@ section {
   background-color: rgba(248, 90, 64, 0.8);
 }
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
