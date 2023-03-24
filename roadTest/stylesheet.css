@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: #009688;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box.hide{
+    display: none;
+}
+
+.custom-box::before,
+.custom-box::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.custom-box{
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding:30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.home-box h3{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.home-box p{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 22px
+}
+
+.home-box span{
+    font-weight: 500;
+}
+
+.home-box .btn{
+    margin-top: 20px;
+
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answers-indicator{
+    width:100%;
+    float: left;
+}
+.quiz-box .question-number{
+
+    font-size: 18px;
+    color: #009688;
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    line-height: 25px;
+
+}
+
+.quiz-box .question-text{
+    font-size: 22px;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 400px;
+    padding: 20px 0;
+    margin: 0;
+
+
+}
+
+.quiz-box .question-text img{
+    max-width: 100%;
+    display: block;
+    margin-top: 15px;
+
+
+}
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+
+}
+
+
+.quiz-box .option-container .option{
+    background-color: #cccccc;
+    padding:13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+.quiz-box .option-container .option.correct{
+    color: #ffffff;
+
+}
+
+@keyframes slideInLeft {
+    0%{
+        transform: translateX(-100%) ;
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+
+    
+}
+
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong{
+    color: #ffffff;
+
+}
+
+
+.quiz-box .btn{
+    margin: 15px 0;
+}
+.quiz-box .answers-indicator{
+    border-top: 1px solid #cccccc;
+}
+.quiz-box .answers-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 3px ;
+    margin-top: 15px;
+
+}
+
+.quiz-box .answers-indicator div.correct{
+    background-color: green;
+    background-image: url(/roadTest/resources/correct.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.quiz-box .answers-indicator div.wrong{
+    background-color: red;
+    background-image: url(/roadTest/resources/wrong.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.result-box{
+    text-align: center;
+}
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #009688;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+
+}
+.result-box table td{
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+*{
+    font-family:  'Open Sans', sans-serif;;
+}
+a{
+    text-decoration: none;
+    
+}
+
+.navbar{
+    background-color: white;
+}
+
+.test a{
+    color: black;
+   
+}
+
+.test a:hover{
+    font-size: 20px;
+    transition: all .5s;
+    
+}
+
+
+
+.banner{
+    background-image: url(/roadTest/resources/pexels-shy-sol-102094.jpg);
+    background-size: cover;
+    color: azure;
+}
+
+.banner a{
+    color: white;
+}
+
+.explore a{
+   background-color: white;
+   color: black;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   font-weight: 600;
+   
+}
+
+.explore a:hover{
+    
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    transition: all  .5s ;
+    background-color: rgba(255, 166, 0, 0.637);
+}
+
+
+.question {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  
+
+  .quizForm input{
+    margin-top: 1rem;
+  }
+
+  
