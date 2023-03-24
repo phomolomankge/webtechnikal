@@ -27,8 +27,8 @@
         <![endif]-->
 
         <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Traffic Test</a>
+  <div class="container-fluid" id="banner">
+    <a class="navbar-brand" href="/roadTest/roadtest.html">Traffic Test</a>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,14 +37,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Test</a>
+          <a class="nav-link" href="test.html">Test</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " href="#">Help</a>
+          <a class="nav-link " href="#help">Help</a>
         </li>
       </ul>
 
@@ -64,25 +64,25 @@
 
             <div class="row mt-5 test" >
                 <div class="col-sm-3">
-                    <i class="fa-solid fa-charging-station"><a href=""> Road Signs</a></i>
+                    <i class="fa-solid fa-charging-station"><a href="#"> Road Signs</a></i>
                     
                 </div>
                 <div class="col-sm-3">
-                    <i class="fa-solid fa-car"><a href=""> Driving Safety & Rules</a></i>
+                    <i class="fa-solid fa-car"><a href="#"> Driving Safety & Rules</a></i>
                    
                 </div>
                 <div class="col-sm-3">
-                    <i class="fa-solid fa-car-on"><a href=""> Road Safety</a></i>
+                    <i class="fa-solid fa-car-on"><a href="#"> Road Safety</a></i>
                     
                 </div>
                 <div class="col-sm-3">
-                    <i class="fa-solid fa-car-burst"><a href=""> Driving Tips</a></i>
+                    <i class="fa-solid fa-car-burst"><a href="#"> Driving Tips</a></i>
                 </div>
             </div>
 
             <div class="row text-center m-5" >
                 <div class="col m-5 explore">
-                    <a href="">Explore</a>
+                    <a href="#explore">Explore</a>
                 </div>
             </div>
         </div>
@@ -91,69 +91,207 @@
        
   
 
-<div class="home-box custom-box">
-	<h3>Instruction</h3>
-	<p>Total Number of questions:<span class="total-question"></span></p>
-	<button type="button" class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+        <h1 style="font-size:30px; margin-top:1rem; margin-bottom:3rem;" id="explore">Here is some Useful information to get you on the <br> road towards getting your licence </h1>
+
+<div class="help container-fluid ">
+  <div class="row" id="help">
+    
+    <div class="col-md-6">
+      <h2>Overview</h2>
+      <ul>
+        <li>Apply for authority to operate a motor vehicle on the roads of Botswana.</li>
+        <li>Foreign nationals and holders of driving licenses issued by foreign countries, who are resident in Botswana, 
+          must apply for the Botswana driving license, by undertaking the foreign licence conversion process. </li>
+        <li>SADC nationals do not need to convert their driving licences from their home country.</li>
+        <li>Visitors may use driving licenses from their home country for a maximum of 90 days in any calendar year. Alternatively, visitors may use their international driving permit for the life of that permit.</li>
+        <li>The Botswana driving licence card is valid for five (5) years. </li>
+        
+      </ul>
+
+    </div>
+
+    <div class="col-md-5 roadTestTable">
+      <h2>Who is eligible?</h2>
+      <p>All citizens and residents, or visitors with exemption certificates,
+         who meet the below age criteria may apply for a Botswana driving licence</p>
+         <table>
+          <tr>
+            <th>​Class of licence</th>
+            <th>Minimum age requirements</th>
+          </tr>
+          <tr>
+            <td>​F (Tractor)</td>
+            <td>​16 years</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+              <li>​A1 and A (motor cycle)</li>
+              <li>B and EB (light motor vehicle with a gross vehicle mass of 3500 kg or less)</li>
+              <li>H (earth-moving industrial equipment)</li>
+            </ul>
+          </td>
+            <td>18 years</td>
+          </tr>
+          <tr>
+            <td>​C1, C, EC1, and EC (heavy motor vehicle with a gross vehicle mass of more than 3500 kg)</td>
+            <td>​21 years</td>
+          </tr>
+         </table>
+    </div>
+  </div>
+
+
 </div>
 
-<div class="quiz-box custom-box hide ">
-	<div class="question-number">
-		
-	</div>
-	<div class="question-text">
-		
-	</div>
-	<div class="option-container">
-		
-	</div>
-	<div class="next-question-btn">
-		<button type="button" class="btn btn-primary" onclick="next()">Next Question</button>
-	</div>
-	<div class="answers-indicator">
-		
 
-	</div>
-
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">How do I get this service?</label>
+  <div class="tab">
+    <ul>
+      <li>Download and complete the <a href="https://www.gov.bw/sites/default/files/2019-12/Form_DL1_1.pdf" target="_blank">Application for a Botswana Driving license/permit form</a> available at the Enquiries Desk at any of the offices of the Department of Road Transport and Safety.</li>
+      <li>Applicants  65 years or older or applying for a class C, C1, EC or EC1 licence should download and complete <a href="https://www.gov.bw/sites/default/files/2019-12/DL%2031%20Health%20Declaration%20Form_0.pdf" target="_blank">Health Declaration form (DL31).</a> Valid for 30 days</li>
+      <li>Go to the eye screening office for eye examination. In the case of applicants with eyesight challenges, the Registration and Licensing Officer would refer them to be seen by an external eye specialist for further testing.  Only after the external eye specialist recommends that the driving licence application process be continued should the applicants return to the Registration and Licensing Officer with the results and recommendations.</li>
+      <li>Submit completed documents to the Registration and licensing Officer.</li>
+      <li>Pay and book for the theory test at the nearest DRTS office indicating preferred method of testing (electronic or manual). </li>
+      <li>Based on the instructions received for chosen method, undergo test at the appointed time and venue.  The pass mark for theory test is 26 out of 30 for classes A, B, F and H, and 39 out of 45 for classes C, C1, EB, EC, and EC1. Unsuccessful applicants must reapply for the theory test only after 14 days have elapsed.</li>
+      <li>If successful, submit your results and supporting documents to the Licensing officer to apply for the Provisional Learner's licence and pay the required fee.</li>
+      <li>When ready the applicant must pay and book for practical test (yard and road) at the nearest DRTS  office with all documents (Provisional Learner's Licence, theory test results, and eye screening results).</li>
+      <li>Undertake the two-step practical test (yard and road), in that order, where candidates are only allowed to do the road test after successful completion of the yard portion. </li>
+      <li>If successful, pay the required fee at the nearest DRTS office to be issued with the driving licence.</li>
+    </ul>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Documents required</label>
+  <div class="tab">
+    <ul>
+      <li>Certified copy of National Identify card (Omang)</li>
+      <li>Certified copy of Passport</li>
+      <li>Certified copy of Exemption certificate or Residence and Work Permit</li>
+      <li>Refugee Identification Card (Refugees)</li>
+      <li>2 passport  sized photos</li>
+    </ul>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Total Cost</label>
+  <div class="tab">
+    <table>
+      <tr>
+        <th>ITEM</th>
+        <th>COST</th>
+      </tr>
+      <tr>
+        <td>Theory Test</td>
+        <td>BWP52.00</td>
+      </tr>
+      <tr>
+        <td>Question Booklet​</td>
+        <td>
+          <ul>
+            <li>​BWP39.00 - Classes A1, B, EB and F</li>
+            <li>​BWP65.00 - Classes C, C1, EC and EC1</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>​Provisional Learner's Licence</td>
+        <td>BWP39.00</td>
+      </tr>
+      <tr>
+        <td>Practical Test (Yard and Road)</td>
+        <td>​BWP52.00</td>
+      </tr>
+      <tr>
+        <td>​Driver's Licence</td>
+        <td>​BWP91.00​</td>
+      </tr>
+    </table>
+  </div>
 </div>
-<div class="result-box custom-box hide">
-	<h1>Quiz Result</h1>
-	<table>
-		<tr>
-			<td>Total Question</td>
-			<td><span class="total-questions"></span></td>
-		</tr>
-		<tr>
-			<td>Attempted</td>
-			<td><span class="total-attempt"></span></td>
-		</tr>
-		<tr>
-			<td>Correct</td>
-			<td><span class="total-correct"></span></td>
-		</tr>
-		<tr>
-			<td>Wrong</td>
-			<td><span class="total-wrong"></span></td>
-		</tr>
-		<tr>
-			<td>Percentage</td>
-			<td><span class="percentage"></span></td>
-		</tr>
-		<tr>
-			<td>Your Total Score</td>
-			<td><span class="total-score"></span></td>
-		</tr>
-		
-
-	</table>
-<button type="button" class="btn btn-primary" onclick="tryAgainQuiz()">Try Again</button>
-<button type="button" class="btn btn-primary" onclick="goToHome()">Go Home</button>
+<div class="container-fluid" >
+  <div class="row"style="padding-left: 4rem;padding-top:1rem;">
+    <h1>Where can I get more information on this Service?</h1>
+    <ul>
+      <li>Department of Road Transport and Safety</li>
+      <li>Tshomarelo House</li>
+      <li>Botswana Savings Bank Building</li>
+      <li>Private Bag 0054 </li>
+      <li>Gaborone</li>
+      <li>Tel. <a href="tel:(267) 368-8600">(267) 368-8600</a></li>
+      <li>Fax. (267) 397-1117/1114</li>
+      <li>Toll Free Number : <a href="tel:17779">17779</a></li>
+      <li>Email:<a href="mailto:mtcpro​@gov.bw">mtcpro​@gov.bw</a></li>
+    </ul>
+<p>Information courtesy of Gov.bw, for more information visit <a href="https://www.gov.bw/transport/driving-licence-application">gov.bw</a></p>
+  </div>
 </div>
 
-<script src="/roadTest/js/app.js"></script>
-<script src="/roadTest/js/question.js"></script>
+<div class="container-fluid practiceTest">
+  <div class="row">
+    <h1>Attempt Practice test</h1>
+    <button class="btn btn-primary" onclick="window.location.href='test.html';">Click Here</button>
+  </div>
+</div>
+
+<!--============================ TEST BOX ==============================-->
 
 
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Our goal is to help you prepare for your upcoming driving exam and improve your 
+            knowledge of the rules of the road. Our test includes 
+            a variety of questions related to traffic laws, driving techniques, and safe practices.<i>Good luck on the test, and drive safely!</i></p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#test">Test</a></li>
+            <li><a href="#banner">Banner</a></li>
+            <li><a href="#help">Help</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#contact">Contact Us</a></li>
+            <li><a href="/index.html">Contribute</a></li>
+            <li><a href="/index.html">Privacy Policy</a></li>
+            <li><a href="/index.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+       <a href="https://webtechnikal.com">webtechnikal</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
 
 
