@@ -1,5 +1,6 @@
 
 //Array of Objects
+
 const quiz = [
     {
         q:'A continuous yellow line down the middle of the road means what?',
@@ -102,10 +103,11 @@ answer: 1
             {
                 q: "What should you do if your car starts to skid on a wet road?",
                 options: ["Brake hard to stop the car", "Accelerate to gain traction", "Steer in the opposite direction of the skid", "Steer in the direction of the skid"],
-                answer: 3
+                answer: 3,
+                
                 }
     
     
     
-    
+               
 ]
